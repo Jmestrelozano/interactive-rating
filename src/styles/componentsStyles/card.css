@@ -49,3 +49,8 @@
   letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
+
+.card-container .card-body .button-send:active {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}

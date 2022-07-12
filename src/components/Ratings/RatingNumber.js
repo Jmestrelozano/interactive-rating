@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "../../styles/componentsStyles/ratingNumber.css";
 
-export const RatingNumber = () => {
+export const RatingNumber = ({ handleChange, numSelected }) => {
   const [ratingNumber, setRatingNumber] = useState([]);
+  // const [numSelected, setNumSelected] = useState(0);
 
   const drawRatingNumber = () => {
     let arr = [];
@@ -16,12 +17,16 @@ export const RatingNumber = () => {
     drawRatingNumber();
   }, []);
 
-  const RenderRating = () => {
+  const RenderRating = ({ action }) => {
     return (
       <>
         {ratingNumber.map((rtN, index) => {
           return (
-            <button className="circle-star" key={index}>
+            <button
+              onClick={() => action(rtN)}
+              className={`circle-star ${numSelected === rtN ? "selected" : ""}`}
+              key={index}
+            >
               <p className="number">{rtN}</p>
             </button>
           );
@@ -30,9 +35,13 @@ export const RatingNumber = () => {
     );
   };
 
+  const handleToggleRating = (num) => {
+    ratingNumber.filter((rtN) => rtN === num && handleChange(num));
+  };
+
   return (
     <div className="container-ratings">
-      <RenderRating />
+      <RenderRating action={handleToggleRating} />
     </div>
   );
 };

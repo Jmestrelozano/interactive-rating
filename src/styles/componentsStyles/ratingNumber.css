@@ -18,6 +18,18 @@
   align-items: center;
 }
 
+.container-ratings .circle-star:hover {
+  background-color: hsl(217, 12%, 63%);
+}
+
+.container-ratings .circle-star:active {
+  background-color: hsl(25, 97%, 53%);
+}
+
+.container-ratings .selected {
+  background-color: hsl(217, 12%, 63%);
+}
+
 .container-ratings .circle-star .number {
   color: white;
   font-size: 1rem;

@@ -1,10 +1,11 @@
 import React from "react";
 import "../../styles/componentsStyles/card.css";
 import { RatingNumber } from "../Ratings/RatingNumber";
+import { CardContainer } from "./CardContainer";
 
-export const CardRating = () => {
+export const CardRating = ({ handleChange, numSelected, handleNextView }) => {
   return (
-    <div className="card-container">
+    <CardContainer>
       <div className="icon-container">
         <img
           src={process.env.PUBLIC_URL + "/assets/icon-star.svg"}
@@ -20,10 +21,12 @@ export const CardRating = () => {
           help us improve our offering!
         </p>
 
-        <RatingNumber />
+        <RatingNumber handleChange={handleChange} numSelected={numSelected} />
 
-        <button className="button-send">submit</button>
+        <button onClick={() => numSelected !== 0 && handleNextView(true)} className="button-send">
+          submit
+        </button>
       </div>
-    </div>
+    </CardContainer>
   );
 };
