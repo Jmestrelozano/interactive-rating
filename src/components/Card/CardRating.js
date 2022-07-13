@@ -14,7 +14,7 @@ export const CardRating = ({ handleChange, numSelected, handleNextView }) => {
         />
       </div>
       <div className="card-body">
-        <h2 className="title">How did we do?</h2>
+        <h1 className="title">How did we do?</h1>
 
         <p className="text">
           Please let us know how we did with your support request. All feedback is appreciated to

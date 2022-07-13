@@ -24,10 +24,10 @@ export const RatingNumber = ({ handleChange, numSelected }) => {
           return (
             <button
               onClick={() => action(rtN)}
-              className={`circle-star ${numSelected === rtN ? "selected" : ""}`}
+              className={`circle-star number ${numSelected === rtN ? "selected" : ""}`}
               key={index}
             >
-              <p className="number">{rtN}</p>
+              {rtN}
             </button>
           );
         })}

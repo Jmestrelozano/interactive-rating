@@ -11,7 +11,7 @@ function App() {
 
   const handleNextView = (bool) => setIsSuccess(bool);
   return (
-    <div className="App">
+    <main className="App">
       <div className="Container">
         {!isSuccess ? (
           <CardRating
@@ -23,7 +23,7 @@ function App() {
           <CardAnswer numSelected={numSelected} />
         )}
       </div>
-    </div>
+    </main>
   );
 }
 

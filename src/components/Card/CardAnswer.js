@@ -14,7 +14,7 @@ export const CardAnswer = ({ numSelected }) => {
       </div>
 
       <div className="card-body-answer">
-        <h2 className="title">Thank you!</h2>
+        <h1 className="title">Thank you!</h1>
 
         <p className="text">
           We appreciate you taking the time to give a rating. If you ever need more support, don’t

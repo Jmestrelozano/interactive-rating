@@ -30,7 +30,7 @@
   background-color: var(--Light-Grey);
 }
 
-.container-ratings .circle-star .number {
+.container-ratings .number {
   color: var(--White);
   font-size: 1rem;
 }
