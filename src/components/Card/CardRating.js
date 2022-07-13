@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/componentsStyles/card.css";
+import "../../styles/componentsStyles/cardRating.css";
 import { RatingNumber } from "../Ratings/RatingNumber";
 import { CardContainer } from "./CardContainer";
 

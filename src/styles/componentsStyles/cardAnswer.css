@@ -1,9 +1,9 @@
-.icon-container-answer {
+.card-container .icon-container-answer {
   display: flex;
   justify-content: center;
 }
 
-.container-qualification {
+.card-container .container-qualification {
   display: flex;
   justify-content: center;
   width: 13rem;
@@ -12,29 +12,29 @@
   border-radius: 2rem;
   padding: 0.3rem;
   height: 2rem;
-  background: hsla(216, 12%, 54%, 0.205);
+  background: var(--Medium-Grey);
 }
 
-.container-qualification p {
-  color: hsl(25, 97%, 53%);
+.card-container .container-qualification p {
+  color: var(--Orange);
   display: flex;
   align-self: center;
 }
 
-.card-body-answer {
+.card-container .card-body-answer {
   margin-top: 2rem;
 }
 
-.card-body-answer .title {
-  color: white;
+.card-container .card-body-answer .title {
+  color: var(--White);
   text-align: center;
   margin-bottom: 0.5em;
   font-size: 1.6rem;
 }
 
-.card-body-answer .text {
+.card-container .card-body-answer .text {
   text-align: center;
-  color: hsl(217, 12%, 63%);
+  color: var(--Light-Grey);
   line-height: 1.7em;
   margin-top: 0;
   font-size: 0.9rem;

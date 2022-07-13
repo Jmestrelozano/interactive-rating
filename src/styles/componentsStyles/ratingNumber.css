@@ -5,7 +5,7 @@
 }
 
 .container-ratings .circle-star {
-  background-color: hsla(216, 12%, 54%, 0.205);
+  background-color: var(--Medium-Grey);
   border-radius: 50%;
   padding: 0.8em 1.2em;
   font-weight: bold;
@@ -19,18 +19,18 @@
 }
 
 .container-ratings .circle-star:hover {
-  background-color: hsl(217, 12%, 63%);
+  background-color: var(--Light-Grey);
 }
 
 .container-ratings .circle-star:active {
-  background-color: hsl(25, 97%, 53%);
+  background-color: var(--Orange);
 }
 
 .container-ratings .selected {
-  background-color: hsl(217, 12%, 63%);
+  background-color: var(--Light-Grey);
 }
 
 .container-ratings .circle-star .number {
-  color: white;
+  color: var(--White);
   font-size: 1rem;
 }
